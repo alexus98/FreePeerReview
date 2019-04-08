@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nuovo Articolo</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alessandro Vacca">
+        <meta name="keywords" content="login, fpw, conferenze">
+        <meta name="description" content="Login FPW">
+        <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="row" id="barra">
+                <div class="col-2 col-s-2 sezLogo">
+                    <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+                </div>
+                <div class="col-10 col-s-10">
+                        <ul class="topnav">
+                            <li><a href="articoli.html" class="current_page_item">ARTICOLI</a></li>
+                            <li><a href="valutazione.html" >VALUTAZIONE</a></li>
+                            <li><a href="login.html">PROFILO</a></li>
+                        </ul>
+                    
+                </div>
+        </div>
+
+        <div class="row" id="main">
+            <div class="col-2 col-s-2" id="left">
+                <div id="saluto">
+                    <p>Ciao, <a href="profilo.html" >Davide</a></p>
+                    <a href="profilo.html" class="bottone">Logout</a>
+                </div>
+                
+                <div id="iMieiArticoli">
+                    <h4>I miei articoli</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+                
+                <div id="daValutare">
+                    <h4>Da Valutare</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 col-s-10" id="right">
+                <h1>Scrivi Articolo</h1>
+                <form action="" method="post">
+                    <h2><label for="titolo">Titolo</label></h2>
+                    <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+                    
+                    <h2><label for="autori">Autori</label></h2>
+                    <input type="text" name="autori" id="autori" placeholder="Autori">
+
+                    <h2>Categorie</h2>
+                    <p><input type="checkbox" name="categoria" value="html">HTML</p>
+                    <p><input type="checkbox" name="categoria" value="jsp">JSP</p>
+                    <p><input type="checkbox" name="categoria" value="css">CSS</p>
+                    <p><input type="checkbox" name="categoria" value="javascript">JavaScript</p>
+                    <p><input type="checkbox" name="categoria" value="servlet">Servlet</p>
+                    <p><input type="checkbox" name="categoria" value="ajax">AJAX</p>
+                    
+                    <h2><label for="immagine">Immagine</label></h2>
+                    <input type="text" name="immagine" id="immagine" placeholder="Inserisci l'url">
+                    
+                    <h2><label for="data">Data</label></h2>
+                    <input type="text" name="data" id="data" placeholder="GG/MM/AAAA">
+                    
+                    <h2><label for="testo">Testo</label></h2>
+                    <input type="text" name="testo" id="testo" placeholder="Testo">
+                    
+                    
+                    <p>
+                        <input type="submit" value="LOGIN" class="bottone">
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+        
+       
+        <div class="row" id="footer">
+            <footer>
+                FPW Designed by Alesandro Vacca
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Valutazioni</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alessandro Vacca">
+        <meta name="keywords" content="login, fpw, conferenze">
+        <meta name="description" content="Login FPW">
+        <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="row" id="barra">
+                <div class="col-2 col-s-2 sezLogo">
+                    <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+                </div>
+                <div class="col-10 col-s-10">
+                        <ul class="topnav">
+                            <li><a href="articoli.html">ARTICOLI</a></li>
+                            <li><a href="valutazione.html" class="current_page_item">VALUTAZIONE</a></li>
+                            <li><a href="login.html">PROFILO</a></li>
+                        </ul>
+                    
+                </div>
+        </div>
+
+        <div class="row" id="main">
+            <div class="col-2 col-s-2" id="left">
+                <div id="saluto">
+                    <p>Ciao, <a href="profilo.html" >Davide</a></p>
+                    <a href="profilo.html" class="bottone">Logout</a>
+                </div>
+                
+                <div id="iMieiArticoli">
+                    <h4>I miei articoli</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+                
+                <div id="daValutare">
+                    <h4>Da Valutare</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 col-s-10" id="right">
+                <div id="articolo">
+                    <h1>Titolo</h1>
+                    <p>Autore1, Autore2</p>
+                    <p id="sezImg"><img src="../images/prova.png" id="immagineArticolo" alt="img prova"></p>
+                    <h3>Categorie:</h3>
+                    <h3>Data:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                
+                <div id="valutazione">
+                    <h1>Valutazione</h1>
+                    <form action="" method="post">
+                        <p>
+                            
+                            <label for="1">1</label>
+                            <label for="2">2</label>
+                            <label for="3">3</label>
+                            <label for="4">4</label>
+                            <label for="5">5</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="voto" id="1" value="1">
+                            <input type="radio" name="voto" id="2" value="2">
+                            <input type="radio" name="voto" id="3" value="3">
+                            <input type="radio" name="voto" id="4" value="4">
+                            <input type="radio" name="voto" id="5" value="5">
+                        </p>
+                        
+                        
+                        <h1><label for="commentiAutori">Commenti per gli autori</label></h1>
+                        <p>
+                            <input type="text" name="commentiAutori" id="commentiAutori" placeholder="Commenti per gli autori">
+                        </p>
+                        <h1><label for="commentiOrganizzatori">Commenti per gli organizzatori</label></h1>
+                        <p>
+                            <input type="text" name="commentiOrganizzatori" id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori">
+                        </p>
+                        <p>
+                        <input type="submit" value="LOGIN" class="bottone">
+                        </p>
+                        
+                    </form>
+                </div>
+                    
+            </div>
+        </div>
+            
+        
+       
+        <div class="row" id="footer">
+            <footer>
+                FPW Designed by Alesandro Vacca
+            </footer>
+        </div>
+    </body>
+</html>

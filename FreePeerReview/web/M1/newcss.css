@@ -1,0 +1,246 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-apr-2019, 1.12.34
+    Author     : Alessandro
+*/
+
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+body {
+    background-color: green;
+    display: block;
+}
+
+body,html
+{
+    height: 100%;
+    margin: 0px;
+}
+
+ h1{font-size: 24px;}
+    h2{font-size: 20px;}
+    h3{font-size: 16px;}
+    
+    body{font-size: 14px;}
+
+
+
+a{text-decoration: none;}
+
+#barra{
+    background-color: #333;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+}
+
+ul.topnav li a:hover:not(.current_page_item)
+{
+    background-color: #464646;
+    color: #00aec7;
+}
+
+.logo{
+    max-width: 110px;
+    width: 100%;
+}
+
+.sezLogo{
+    text-align: center;
+}
+
+.current_page_item {
+    font-weight: bold;
+    color: white;
+    background-color:#00aec7; 
+}
+
+#main{
+    background-color: yellow;
+}
+
+#left{
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#right{
+    background-color: #999999;
+    height: 100%;
+    
+    
+    
+    padding: 20px;
+}
+
+
+.login{
+    padding: 20px;
+    width: 50%;
+    border: 3px solid #696969;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+}
+
+.login input{
+    width: 100%;
+}
+
+.bottone{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2px 30px;
+    height: 40px;
+    background-color: #00aec7;
+    border: 1px solid #00aec7;
+    color: white;
+}
+
+#saluto{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#iMieiArticoli,#daValutare{
+    border-top: 1px black solid;
+}
+
+
+#iMieiArticoli ul, #daValutare ul{
+    padding-left: 20px;
+}
+
+#iMieiArticoli ul li, #daValutare ul li{
+    padding: 2px;
+}
+
+#tabellaArticoli{
+    background-color: #333;
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.pari{
+    background-color: #bbb6b7;
+}
+
+.dispari{
+    background-color: #d7d6d6;
+}
+
+#tabellaArticoli tr th{
+    background-color: #333;
+    color: #00aec7;
+}
+
+#sezImg{
+    text-align: center;
+}
+
+#immagineArticolo{ 
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    max-width: 700px;
+}
+
+
+
+#footer{
+    height: 50px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* For mobile phones: */
+  [class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    h1{font-size: 24px;}
+    h2{font-size: 20px;}
+    h3{font-size: 16px;}
+    
+    body{font-size: 16px;}
+    
+
+}
+
+@media only screen and (min-width: 481px)
+{
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+    ul.topnav li {float: none;}
+    .login{font-size: 10px;}
+
+
+    h1{font-size: 16px;}
+    h2{font-size: 14px;}
+    h3{font-size: 12px;}
+
+    body{font-size: 12px;}
+}
+
