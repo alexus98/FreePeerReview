@@ -46,6 +46,10 @@ and open the template in the editor.
                     </ul>
                 </div>
                 
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html" class="bottone">I miei articoli</a>
+                </div>
+                
                 <div id="daValutare">
                     <h4>Da Valutare</h4>
                     <ul>
@@ -54,49 +58,50 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
+                
+                <div id="miniDaValutare">
+                    <a href="valutazione.html" class="bottone">Da Valutare</a>
+                </div>
             </div>
             <div class="col-10 col-s-10" id="right">
                 <div id="articolo">
                     <h1>Titolo</h1>
-                    <p>Autore1, Autore2</p>
+                    <h3>Autore1, Autore2</h3>
                     <p id="sezImg"><img src="../images/prova.png" id="immagineArticolo" alt="img prova"></p>
-                    <h3>Categorie:</h3>
-                    <h3>Data:</h3>
+                    <h3>Categorie: Servlet, JSP</h3>
+                    <h3>Data: 5 Marzo 2019</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 
                 <div id="valutazione">
                     <h1>Valutazione</h1>
                     <form action="" method="post">
-                        <p>
-                            
-                            <label for="1">1</label>
-                            <label for="2">2</label>
-                            <label for="3">3</label>
-                            <label for="4">4</label>
-                            <label for="5">5</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="voto" id="1" value="1">
+                        
+                        <p class="bold">Voto</p>
+                            <label for="1">1</label><input type="radio" name="voto" id="1" value="1">
+                        <label for="2">2</label>
                             <input type="radio" name="voto" id="2" value="2">
+                            <label for="3">3</label>
                             <input type="radio" name="voto" id="3" value="3">
+                        
+                            <label for="4">4</label>
                             <input type="radio" name="voto" id="4" value="4">
+                        
+                            <label for="5">5</label>
                             <input type="radio" name="voto" id="5" value="5">
-                        </p>
-                        
-                        
-                        <h2><label for="commentiAutori">Commenti per gli autori</label></h2>
-                        <p>
-                            <input type="text" name="commentiAutori" id="commentiAutori" placeholder="Commenti per gli autori">
-                        </p>
-                        <h2><label for="commentiOrganizzatori">Commenti per gli organizzatori</label></h2>
-                        <p>
-                            <input type="text" name="commentiOrganizzatori" id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori">
-                        </p>
-                        <p class="centrato">
-                        <input type="submit" value="INVIA" class="bottone">
-                        </p>
-                        
+
+                            
+
+                            <p><label for="commentiOrganizzatori" class="bold">Commenti per gli organizzatori</label></p>
+                            <p><textarea id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori"></textarea></p>
+
+                            <p><label for="commentiAutori" class="bold">Commenti per gli autori</label></p>
+                            <p><textarea id="commentiAutori"></textarea></p>
+
+                            <p class="centrato">
+                                <input type="submit" value="INVIA" class="bottone">
+                            </p>
+
                     </form>
                 </div>
                     
