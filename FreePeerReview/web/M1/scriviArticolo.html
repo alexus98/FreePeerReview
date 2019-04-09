@@ -9,8 +9,8 @@ and open the template in the editor.
         <title>Nuovo Articolo</title>
         <meta charset="UTF-8">
         <meta name="author" content="Alessandro Vacca">
-        <meta name="keywords" content="login, fpw, conferenze">
-        <meta name="description" content="Login FPW">
+        <meta name="keywords" content="nuovo, articolo, fpw">
+        <meta name="description" content="Nuovo Articolo FPW">
         <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -24,7 +24,7 @@ and open the template in the editor.
                         <ul class="topnav">
                             <li><a href="articoli.html" class="current_page_item">ARTICOLI</a></li>
                             <li><a href="valutazione.html" >VALUTAZIONE</a></li>
-                            <li><a href="login.html">PROFILO</a></li>
+                            <li><a href="profilo.html">PROFILO</a></li>
                         </ul>
                     
                 </div>
@@ -55,38 +55,63 @@ and open the template in the editor.
                     </ul>
                 </div>
             </div>
-            <div class="col-10 col-s-10" id="right">
-                <h1>Scrivi Articolo</h1>
-                <form action="" method="post">
-                    <h2><label for="titolo">Titolo</label></h2>
-                    <input type="text" name="titolo" id="titolo" placeholder="Titolo">
-                    
-                    <h2><label for="autori">Autori</label></h2>
-                    <input type="text" name="autori" id="autori" placeholder="Autori">
+            <div class="col-10 col-s-10 centrato" id="right">
+                
+                    <h1>Scrivi Articolo</h1>
+                <div id="scriviArticolo">
+                    <form action="articoli.html" method="post">
+                        <h3><label for="titolo">Titolo</label></h3>
+                        <input type="text" name="titolo" id="titolo" placeholder="Titolo">
 
-                    <h2>Categorie</h2>
-                    <p><input type="checkbox" name="categoria" value="html">HTML</p>
-                    <p><input type="checkbox" name="categoria" value="jsp">JSP</p>
-                    <p><input type="checkbox" name="categoria" value="css">CSS</p>
-                    <p><input type="checkbox" name="categoria" value="javascript">JavaScript</p>
-                    <p><input type="checkbox" name="categoria" value="servlet">Servlet</p>
-                    <p><input type="checkbox" name="categoria" value="ajax">AJAX</p>
-                    
-                    <h2><label for="immagine">Immagine</label></h2>
-                    <input type="text" name="immagine" id="immagine" placeholder="Inserisci l'url">
-                    
-                    <h2><label for="data">Data</label></h2>
-                    <input type="text" name="data" id="data" placeholder="GG/MM/AAAA">
-                    
-                    <h2><label for="testo">Testo</label></h2>
-                    <input type="text" name="testo" id="testo" placeholder="Testo">
-                    
-                    
-                    <p>
-                        <input type="submit" value="LOGIN" class="bottone">
-                    </p>
+                        <h3><label for="autori">Autori</label></h3>
+                        <input type="text" name="autori" id="autori" placeholder="Autori">
 
-                </form>
+                        <h3>Categorie</h3>
+                        <p>
+                            <input type="checkbox" name="categoria" id="html" value="html">
+                            <label class="cat" for="html">HTML</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="categoria" id="jsp" value="jsp">
+                            <label class="cat" for="jsp">JSP</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="categoria" id="css" value="css">
+                            <label class="cat" for="css">CSS</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="categoria" id="javascript" value="javascript">
+                            <label class="cat" for="javascript">JavaScript</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="categoria" id="servlet" value="servlet">
+                            <label class="cat" for="servlet">Servlet</label>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" name="categoria" id="ajax" value="ajax">
+                            <label  class="cat" for="ajax">AJAX</label>
+                        </p>
+
+                        <h3><label for="immagine">Immagine</label></h3>
+                        <input type="text" name="immagine" id="immagine" placeholder="Inserisci l'url">
+
+                        <h3><label for="data">Data</label></h3>
+                        <input type="text" name="data" id="data" placeholder="GG/MM/AAAA">
+
+                        <h3><label for="testo">Testo</label></h3>
+                        <textarea id="testo" placeholder="Testo"></textarea>
+
+
+                        <p>
+                            <input type="submit" value="INVIA" class="bottone">
+                        </p>
+
+                    </form>
+                </div>
             </div>
         </div>
 
