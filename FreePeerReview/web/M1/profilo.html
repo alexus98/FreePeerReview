@@ -24,7 +24,7 @@ and open the template in the editor.
                         <ul class="topnav">
                             <li><a href="articoli.html">ARTICOLI</a></li>
                             <li><a href="valutazione.html" >VALUTAZIONE</a></li>
-                            <li><a href="login.html" class="current_page_item">PROFILO</a></li>
+                            <li><a href="profilo.html" class="current_page_item">PROFILO</a></li>
                         </ul>
                 </div>
         </div>
@@ -53,33 +53,26 @@ and open the template in the editor.
                     </ul>
                 </div>
             </div>
-            <div class="col-10 col-s-10" id="right">
-                <div class="row">
-                    <div class="col-3 col-s-3">
-                        <img src="http://digimedia.libero.it/donmichelangelotondo/profilo" alt="Foto Profilo" style="width: 100px; height: 100px; ">
-                    </div>
-                    <div class="col-7 col-s-7">
-                        <h1>PROFILO</h1>
-                    </div>
-                    
-                    
+            <div class="col-10 col-s-10 centrato" id="right">
+                <div class="row" style="display: flex;">
+                    <div style="margin: auto"><h1 >PROFILO</h1></div>
                     
                 </div>
-                
-                <div class="centrato">
+                <div class="sezProfilo centrato" style="margin: auto">
+                    
                     <form>
-                        <h3><label for="nome">Nome</label></h3>
-                        <input type="text" name="nome" id="nome" placeholder="Nome">
-                        <h3><label for="nome">Cognome</label></h3>
-                        <input type="text" name="cognome" id="cognome" placeholder="Cognome">
-                        <h3><label for="foto">Foto</label></h3>
-                        <input type="text" name="foto" id="foto" placeholder="Inserisci l'url">
-                        <h3><label for="email">Email</label></h3>
-                        <input type="text" name="email" id="email" placeholder="Email">
-                        <h3><label for="password">Password</label></h3>
-                        <input type="password" name="password" id="password" placeholder="Password">
-                        <h3 style="di"><label for="ente">Ente</label></h3>
-                        <input type="text" name="ente" id="ente" placeholder="Ente">
+                        <p><label for="nome" class="lab">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome"></p>
+                        <p><label for="cognome" class="lab">Cognome</label>
+                        <input type="text" name="cognome" id="cognome" placeholder="Cognome"></p>
+                        <p><label for="foto" class="lab">Foto</label>
+                        <input type="text" name="foto" id="foto" placeholder="Inserisci l'url"></p>
+                        <p><label for="email" class="lab">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Email"></p>
+                        <p><label for="password" class="lab">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password"></p>
+                        <p><label for="ente"class="lab">Ente</label>
+                            <input type="text" name="ente" id="ente" placeholder="Ente"></p>
                         <p>
                         <input type="submit" value="SALVA" class="bottone">
                         </p>

@@ -87,11 +87,8 @@ ul.topnav li a:hover:not(.current_page_item){
 .login{
     padding: 20px;
     width: 50%;
-    border: 3px solid #696969;
-    border-radius: 10px;
+    border: 2px solid black;
     background-color: white;
-    font-weight: bold;
-    font-size: 15px;
     margin: auto;
     text-align: center;
 }
@@ -179,13 +176,14 @@ img.azione{
     max-width: 700px;
 }
 
-.cat
-{
-    width: 100px;
+.lab{
+    width: 120px;
     display: inline-block;
-    padding: 12px;
+    padding: 10px;
     text-align: left;
 }
+
+.bold{font-weight: bold;}
 
 #testo
 {
@@ -199,9 +197,18 @@ img.azione{
     width: 75%;
     border: 2px black solid;
     margin: auto;
+    background-color: white;
+    padding: 20px;
 }
 
+.inline{display: inline-block;}
 
+.sezProfilo
+{
+    border: 2px black solid;
+    margin: auto;
+    background-color: white;
+}
 
 #footer{
     height: 50px;
