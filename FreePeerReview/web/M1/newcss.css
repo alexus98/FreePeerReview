@@ -46,7 +46,7 @@ body{font-size: 13px;}
 
 a{text-decoration: none;}
 
-#barra{background-color: #333;}
+header{background-color: #333;}
 
 ul.topnav {
   list-style-type: none;
@@ -60,7 +60,7 @@ ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 17px 20px;
+  padding: 16px 20px;
 }
 
 ul.topnav li a:hover:not(.current_page_item){
@@ -70,7 +70,7 @@ ul.topnav li a:hover:not(.current_page_item){
 
 .logo{
     max-width: 80px;
-    height: 45px;
+    height: 46px;
 }
 
 
@@ -83,7 +83,7 @@ ul.topnav li a:hover:not(.current_page_item){
     background-color:#00aec7; 
 }
 
-#left, #right{padding: 20px;}
+aside, main{padding: 20px;}
 
 .login{
     padding: 20px;
@@ -96,11 +96,12 @@ ul.topnav li a:hover:not(.current_page_item){
 
 .bottone{
     font-weight: bold;
-    font-size: 16px;
-    padding: 2px 30px;
+    padding: 5px 10px;
     background-color: #00aec7;
     border: 1px solid #00aec7;
     color: white;
+    width: 100%;
+    max-width: 200px;
 }
 
 #saluto{
@@ -208,11 +209,22 @@ img.azione{
 .sezProfilo
 {
     border: 2px black solid;
+    padding: 10px;
     margin: auto;
-    background-color: white;
 }
 
-#footer{
+#imgProf{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width: 100px;}
+
+#cancellati{
+    font-size: 20px;
+    float: right;
+}
+
+footer{
     height: 50px;
     padding: 15px;
     background-color: #333;
@@ -290,10 +302,21 @@ img.azione{
     
     .lab{text-align: center; width: 100%;}
     
-    #saluto{visibility: hidden; width: 0px; height: 0px;}
-    #miniMieiArticoli,#miniDaValutare{visibility: visible; text-align: center;}
-    miniDaValutare{visibility: visible; text-align: center;}
-    #iMieiArticoli,#daValutare{visibility: hidden; width: 0px; height: 0px; border:0px;}
+    #miniMieiArticoli,#miniDaValutare{
+        visibility: visible;
+        text-align: center;}
+    
+    miniDaValutare{
+        visibility: visible;
+        text-align: center;
+    }
+    
+    #saluto,#iMieiArticoli,#daValutare{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        border:0px;
+        padding: 0;}
     
 }
 

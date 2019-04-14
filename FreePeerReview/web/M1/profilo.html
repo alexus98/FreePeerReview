@@ -16,7 +16,7 @@ and open the template in the editor.
     </head>
     
     <body>
-        <div class="row" id="barra">
+        <header class="row">
                 <div class="col-2 col-s-2 sezLogo">
                     <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
                 </div>
@@ -27,9 +27,9 @@ and open the template in the editor.
                             <li><a href="profilo.html" class="current_page_item">PROFILO</a></li>
                         </ul>
                 </div>
-        </div>
-        <div class="row" id="main">
-            <div class="col-2 col-s-2" id="left">
+        </header>
+        <div class="row">
+            <aside class="col-2 col-s-2">
                 <div id="saluto">
                     <p>Ciao, <a href="profilo.html" >Davide</a></p>
                     <a href="profilo.html" class="bottone">Logout</a>
@@ -52,33 +52,37 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-10 col-s-10 centrato" id="right">
+            </aside>
+            
+            <main class="col-10 col-s-10">
                 <div class="row" style="display: flex;">
                     <div style="margin: auto"><h1 >PROFILO</h1></div>
                     
                 </div>
                 <div class="sezProfilo centrato" style="margin: auto">
-                    
                     <form>
+                        <img src="../images/profilo.jpg" alt="foto profilo" id="imgProf">
                         <p><label for="nome" class="lab bold">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Nome"></p>
+                            <input type="text" name="nome" id="nome" placeholder="Nome"></p>
                         <p><label for="cognome" class="lab bold">Cognome</label>
-                        <input type="text" name="cognome" id="cognome" placeholder="Cognome"></p>
+                            <input type="text" name="cognome" id="cognome" placeholder="Cognome"></p>
                         <p><label for="foto" class="lab bold">Foto</label>
-                        <input type="text" name="foto" id="foto" placeholder="Inserisci l'url"></p>
+                            <input type="url" name="foto" id="foto" placeholder="Inserisci l'url"></p>
                         <p><label for="email" class="lab bold">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email"></p>
+                            <input type="email" name="email" id="email" placeholder="Email"></p>
                         <p><label for="password" class="lab bold">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password"></p>
+                            <input type="password" name="password" id="password" placeholder="Password"></p>
                         <p><label for="ente" class="lab bold">Ente</label>
                             <input type="text" name="ente" id="ente" placeholder="Ente"></p>
                         <p>
-                        <input type="submit" value="SALVA" class="bottone">
+                            <input type="submit" value="SALVA" class="bottone">
                         </p>
+                        
                     </form>
+                    <p  id="cancellati"><a href=""> Cancellati</a></p>
+                     
                 </div>
-            </div>
+            </main>
         </div>
 
         
