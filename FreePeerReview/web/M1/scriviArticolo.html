@@ -14,11 +14,14 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body>
         <header class="row">
-            <div class="col-2 col-s-2 sezLogo">
+            <div class="col-2 col-s-2 centrato">
                 <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+            <div id="logout">
+                <a  href="../index.html">LOGOUT</a>
             </div>
             <div class="col-10 col-s-10">
                 <ul class="topnav">
@@ -34,7 +37,7 @@ and open the template in the editor.
             <aside class="col-2 col-s-2">
                 <div id="saluto">
                     <p>Ciao, <a href="profilo.html" >Davide</a></p>
-                    <a href="profilo.html" class="bottone">Logout</a>
+                    <a href="../index.html" class="bottone">Logout</a>
                 </div>
 
                 <div id="iMieiArticoli">
@@ -46,6 +49,10 @@ and open the template in the editor.
                     </ul>
                 </div>
 
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html">I miei articoli</a>
+                </div>
+
                 <div id="daValutare">
                     <h4>Da Valutare</h4>
                     <ul>
@@ -53,6 +60,10 @@ and open the template in the editor.
                         <li><a href="">Articolo2</a></li>
                         <li><a href="">Articolo3</a></li>
                     </ul>
+                </div>
+
+                <div id="miniDaValutare">
+                    <a href="valutazione.html">Da Valutare</a>
                 </div>
             </aside>
             <main class="col-10 col-s-10 centrato">
@@ -104,7 +115,7 @@ and open the template in the editor.
                             <input type="date" name="data" id="data"></p>
 
                         <p><br><label for="testo" class="bold">Testo</label></p>
-                        <p><textarea id="testo" placeholder="Testo"></textarea></p>
+                        <p><textarea id="testo"></textarea></p>
 
 
                         <p>

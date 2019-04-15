@@ -14,20 +14,23 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body>
         <header class="row">
-                <div class="col-2 col-s-2 sezLogo">
-                    <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
-                </div>
-                <div class="col-10 col-s-10">
-                        <ul class="topnav">
-                            <li><a href="articoli.html">ARTICOLI</a></li>
-                            <li><a href="valutazione.html" class="current_page_item">VALUTAZIONE</a></li>
-                            <li><a href="profilo.html">PROFILO</a></li>
-                        </ul>
-                    
-                </div>
+            <div class="col-2 col-s-2 centrato">
+                <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+            <div id="logout">
+                <a  href="../index.html">LOGOUT</a>
+            </div>
+            <div class="col-10 col-s-10">
+                <ul class="topnav">
+                    <li><a href="articoli.html">ARTICOLI</a></li>
+                    <li><a href="valutazione.html" class="current_page_item">VALUTAZIONE</a></li>
+                    <li><a href="profilo.html">PROFILO</a></li>
+                </ul>
+
+            </div>
         </header>
 
         <div class="row">
@@ -36,7 +39,7 @@ and open the template in the editor.
                     <p>Ciao, <a href="profilo.html" >Davide</a></p>
                     <a href="../index.html" class="bottone">Logout</a>
                 </div>
-                
+
                 <div id="iMieiArticoli">
                     <h4>I miei articoli</h4>
                     <ul>
@@ -45,11 +48,11 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
-                
+
                 <div id="miniMieiArticoli">
-                    <a href="articoli.html" class="bottone">I miei articoli</a>
+                    <a href="articoli.html">I miei articoli</a>
                 </div>
-                
+
                 <div id="daValutare">
                     <h4>Da Valutare</h4>
                     <ul>
@@ -58,12 +61,12 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
-                
+
                 <div id="miniDaValutare">
-                    <a href="valutazione.html" class="bottone">Da Valutare</a>
+                    <a href="valutazione.html">Da Valutare</a>
                 </div>
             </aside>
-            
+
             <main class="col-10 col-s-10">
                 <div id="articolo">
                     <h1>Titolo</h1>
@@ -73,39 +76,39 @@ and open the template in the editor.
                     <h3>Data: 5 Marzo 2019</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                
+
                 <div id="valutazione">
                     <h1>Valutazione</h1>
                     <form action="" method="post">
-                        
+
                         <p class="bold">Voto</p>
-                            <label for="1">1</label><input type="radio" name="voto" id="1" value="1">
+                        <label for="1">1</label><input type="radio" name="voto" id="1" value="1">
                         <label for="2">2</label>
-                            <input type="radio" name="voto" id="2" value="2">
-                            <label for="3">3</label>
-                            <input type="radio" name="voto" id="3" value="3">
-                        
-                            <label for="4">4</label>
-                            <input type="radio" name="voto" id="4" value="4">
-                        
-                            <label for="5">5</label>
-                            <input type="radio" name="voto" id="5" value="5">
+                        <input type="radio" name="voto" id="2" value="2">
+                        <label for="3">3</label>
+                        <input type="radio" name="voto" id="3" value="3">
 
-                            
+                        <label for="4">4</label>
+                        <input type="radio" name="voto" id="4" value="4">
 
-                            <p><label for="commentiOrganizzatori" class="bold">Commenti per gli organizzatori</label></p>
-                            <p><textarea id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori"></textarea></p>
+                        <label for="5">5</label>
+                        <input type="radio" name="voto" id="5" value="5">
 
-                            <p><label for="commentiAutori" class="bold">Commenti per gli autori</label></p>
-                            <p><textarea id="commentiAutori"></textarea></p>
 
-                            <p class="centrato">
-                                <input type="submit" value="INVIA" class="bottone">
-                            </p>
+
+                        <p><label for="commentiOrganizzatori" class="bold">Commenti per gli organizzatori</label></p>
+                        <p><textarea id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori"></textarea></p>
+
+                        <p><label for="commentiAutori" class="bold">Commenti per gli autori</label></p>
+                        <p><textarea id="commentiAutori"></textarea></p>
+
+                        <p class="centrato">
+                            <input type="submit" value="INVIA" class="bottone">
+                        </p>
 
                     </form>
                 </div>
-                    
+
             </main>
         </div>
 

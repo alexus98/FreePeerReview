@@ -14,27 +14,30 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    
+
     <body>
         <header class="row">
-                <div class="col-2 col-s-2 sezLogo">
-                    <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
-                </div>
-                <div class="col-10 col-s-10">
-                        <ul class="topnav">
-                            <li><a href="articoli.html">ARTICOLI</a></li>
-                            <li><a href="valutazione.html" >VALUTAZIONE</a></li>
-                            <li><a href="profilo.html" class="current_page_item">PROFILO</a></li>
-                        </ul>
-                </div>
+            <div class="col-2 col-s-2 centrato">
+                <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+            <div id="logout">
+                <a href="../index.html">LOGOUT</a>
+            </div>
+            <div class="col-10 col-s-10">
+                <ul class="topnav">
+                    <li><a href="articoli.html">ARTICOLI</a></li>
+                    <li><a href="valutazione.html" >VALUTAZIONE</a></li>
+                    <li><a href="profilo.html" class="current_page_item">PROFILO</a></li>
+                </ul>
+            </div>
         </header>
         <div class="row">
             <aside class="col-2 col-s-2">
                 <div id="saluto">
                     <p>Ciao, <a href="profilo.html" >Davide</a></p>
-                    <a href="profilo.html" class="bottone">Logout</a>
+                    <a href="../index.html" class="bottone">Logout</a>
                 </div>
-                
+
                 <div id="iMieiArticoli">
                     <h4>I miei articoli</h4>
                     <ul>
@@ -43,7 +46,11 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
-                
+
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html">I miei articoli</a>
+                </div>
+
                 <div id="daValutare">
                     <h4>Da Valutare</h4>
                     <ul>
@@ -52,12 +59,16 @@ and open the template in the editor.
                         <li><a href="">Articolo3</a></li>
                     </ul>
                 </div>
+
+                <div id="miniDaValutare">
+                    <a href="valutazione.html">Da Valutare</a>
+                </div>
             </aside>
-            
+
             <main class="col-10 col-s-10">
                 <div class="row" style="display: flex;">
                     <div style="margin: auto"><h1 >PROFILO</h1></div>
-                    
+
                 </div>
                 <div class="sezProfilo centrato" style="margin: auto">
                     <form>
@@ -77,16 +88,16 @@ and open the template in the editor.
                         <p>
                             <input type="submit" value="SALVA" class="bottone">
                         </p>
-                        
+
                     </form>
                     <p  id="cancellati"><a href=""> Cancellati</a></p>
-                     
+
                 </div>
             </main>
         </div>
 
-        
-       
+
+
         <div class="row" id="footer">
             <footer>
                 FPW Designed by Alesandro Vacca
