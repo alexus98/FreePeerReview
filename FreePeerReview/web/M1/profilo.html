@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="author" content="Alessandro Vacca">
         <meta name="keywords" content="profilo, fpw">
         <meta name="description" content="Profilo Fpw">
-        <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -20,9 +20,11 @@ and open the template in the editor.
             <div class="col-2 col-s-2 centrato">
                 <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
             </div>
+
             <div id="logout">
                 <a href="../index.html">LOGOUT</a>
             </div>
+
             <div class="col-10 col-s-10">
                 <ul class="topnav">
                     <li><a href="articoli.html">ARTICOLI</a></li>
@@ -67,41 +69,56 @@ and open the template in the editor.
 
             <main class="col-10 col-s-10">
                 <div class="row" style="display: flex;">
-                    <div style="margin: auto"><h1 >PROFILO</h1></div>
-
+                    <div style="margin: auto">
+                        <h1 >PROFILO</h1>
+                    </div>
                 </div>
+
                 <div class="sezProfilo centrato" style="margin: auto">
                     <form>
                         <img src="../images/profilo.jpg" alt="foto profilo" id="imgProf">
-                        <p><label for="nome" class="lab bold">Nome</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome"></p>
-                        <p><label for="cognome" class="lab bold">Cognome</label>
-                            <input type="text" name="cognome" id="cognome" placeholder="Cognome"></p>
-                        <p><label for="foto" class="lab bold">Foto</label>
-                            <input type="url" name="foto" id="foto" placeholder="Inserisci l'url"></p>
-                        <p><label for="email" class="lab bold">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email"></p>
-                        <p><label for="password" class="lab bold">Password</label>
-                            <input type="password" name="password" id="password" placeholder="Password"></p>
-                        <p><label for="ente" class="lab bold">Ente</label>
-                            <input type="text" name="ente" id="ente" placeholder="Ente"></p>
+                        <p>
+                            <label for="nome" class="lab bold">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                        </p>
+
+                        <p>
+                            <label for="cognome" class="lab bold">Cognome</label>
+                            <input type="text" name="cognome" id="cognome" placeholder="Cognome">
+                        </p>
+
+                        <p>
+                            <label for="foto" class="lab bold">Foto</label>
+                            <input type="url" name="foto" id="foto" placeholder="Inserisci l'url">
+                        </p>
+
+                        <p>
+                            <label for="email" class="lab bold">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </p>
+
+                        <p>
+                            <label for="password" class="lab bold">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </p>
+
+                        <p>
+                            <label for="ente" class="lab bold">Ente</label>
+                            <input type="text" name="ente" id="ente" placeholder="Ente">
+                        </p>
+
                         <p>
                             <input type="submit" value="SALVA" class="bottone">
                         </p>
-
                     </form>
-                    <p  id="cancellati"><a href=""> Cancellati</a></p>
 
+                    <p  id="cancellati"><a href=""> Cancellati</a></p>
                 </div>
             </main>
         </div>
 
-
-
-        <div class="row" id="footer">
-            <footer>
-                FPW Designed by Alesandro Vacca
-            </footer>
-        </div>
+        <footer>
+            FPW Designed by Alesandro Vacca
+        </footer>
     </body>
 </html>

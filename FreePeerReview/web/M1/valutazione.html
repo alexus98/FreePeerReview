@@ -9,9 +9,9 @@ and open the template in the editor.
         <title>FPW - Valutazioni</title>
         <meta charset="UTF-8">
         <meta name="author" content="Alessandro Vacca">
-        <meta name="keywords" content="login, fpw, conferenze">
-        <meta name="description" content="Login FPW">
-        <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
+        <meta name="keywords" content="valutazione, fpw, conferenze">
+        <meta name="description" content="Valutazione FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -20,16 +20,17 @@ and open the template in the editor.
             <div class="col-2 col-s-2 centrato">
                 <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
             </div>
+
             <div id="logout">
                 <a  href="../index.html">LOGOUT</a>
             </div>
+
             <div class="col-10 col-s-10">
                 <ul class="topnav">
                     <li><a href="articoli.html">ARTICOLI</a></li>
                     <li><a href="valutazione.html" class="current_page_item">VALUTAZIONE</a></li>
                     <li><a href="profilo.html">PROFILO</a></li>
                 </ul>
-
             </div>
         </header>
 
@@ -71,20 +72,22 @@ and open the template in the editor.
                 <div id="articolo">
                     <h1>Titolo</h1>
                     <h3>Autore1, Autore2</h3>
-                    <p id="sezImg"><img src="../images/prova.png" id="immagineArticolo" alt="img prova"></p>
+                    <p id="sezImg"><img src="../images/imgArticolo.jpg" id="immagineArticolo" alt="img prova"></p>
                     <h3>Categorie: Servlet, JSP</h3>
                     <h3>Data: 5 Marzo 2019</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 
                 <div id="valutazione">
                     <h1>Valutazione</h1>
                     <form action="" method="post">
-
                         <p class="bold">Voto</p>
-                        <label for="1">1</label><input type="radio" name="voto" id="1" value="1">
+                        <label for="1">1</label>
+                        <input type="radio" name="voto" id="1" value="1">
+
                         <label for="2">2</label>
                         <input type="radio" name="voto" id="2" value="2">
+
                         <label for="3">3</label>
                         <input type="radio" name="voto" id="3" value="3">
 
@@ -97,18 +100,15 @@ and open the template in the editor.
 
 
                         <p><label for="commentiOrganizzatori" class="bold">Commenti per gli organizzatori</label></p>
-                        <p><textarea id="commentiOrganizzatori" placeholder="Commenti per gli organizzatori"></textarea></p>
+                        <p><textarea class="testo"></textarea></p>
 
                         <p><label for="commentiAutori" class="bold">Commenti per gli autori</label></p>
-                        <p><textarea id="commentiAutori"></textarea></p>
+                        <p><textarea class="testo"></textarea></p>
 
-                        <p class="centrato">
-                            <input type="submit" value="INVIA" class="bottone">
-                        </p>
+                        <p class="centrato"><input type="submit" value="INVIA" class="bottone"></p>
 
                     </form>
                 </div>
-
             </main>
         </div>
 

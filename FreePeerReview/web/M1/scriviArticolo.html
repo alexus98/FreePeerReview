@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="author" content="Alessandro Vacca">
         <meta name="keywords" content="nuovo, articolo, fpw">
         <meta name="description" content="Nuovo Articolo FPW">
-        <link rel="stylesheet" type="text/css" href="newcss.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -20,16 +20,17 @@ and open the template in the editor.
             <div class="col-2 col-s-2 centrato">
                 <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
             </div>
+
             <div id="logout">
                 <a  href="../index.html">LOGOUT</a>
             </div>
+
             <div class="col-10 col-s-10">
                 <ul class="topnav">
                     <li><a href="articoli.html" class="current_page_item">ARTICOLI</a></li>
                     <li><a href="valutazione.html" >VALUTAZIONE</a></li>
                     <li><a href="profilo.html">PROFILO</a></li>
                 </ul>
-
             </div>
         </header>
 
@@ -66,18 +67,23 @@ and open the template in the editor.
                     <a href="valutazione.html">Da Valutare</a>
                 </div>
             </aside>
-            <main class="col-10 col-s-10 centrato">
 
+            <main class="col-10 col-s-10 centrato">
                 <h1>Scrivi Articolo</h1>
                 <div id="scriviArticolo">
                     <form action="articoli.html" method="post">
-                        <p><label for="titolo" class="lab bold">Titolo</label>
-                            <input type="text" name="titolo" id="titolo" placeholder="Titolo"></p>
+                        <p>
+                            <label for="titolo" class="lab bold">Titolo</label>
+                            <input type="text" name="titolo" id="titolo" placeholder="Titolo">
+                        </p>
 
-                        <p><label for="autori" class="lab bold">Autori</label>
-                            <input type="text" name="autori" id="autori" placeholder="Autori"></p>
+                        <p>
+                            <label for="autori" class="lab bold">Autori</label>
+                            <input type="text" name="autori" id="autori" placeholder="Autori">
+                        </p>
 
                         <p class="bold">Categorie</p>
+
                         <div>
                             <p class="inline">
                                 <label class="lab" for="html"><input type="checkbox" name="categoria" id="html" value="html">HTML</label>
@@ -108,19 +114,24 @@ and open the template in the editor.
                             </p>
                         </div>
 
-                        <p><label for="immagine" class="lab bold">Immagine</label>
-                            <input type="text" name="immagine" id="immagine" placeholder="Inserisci l'url"></p>
-
-                        <p><label for="data" class="lab bold">Data</label>
-                            <input type="date" name="data" id="data"></p>
-
-                        <p><br><label for="testo" class="bold">Testo</label></p>
-                        <p><textarea id="testo"></textarea></p>
-
+                        <p>
+                            <label for="immagine" class="lab bold">Immagine</label>
+                            <input type="text" name="immagine" id="immagine" placeholder="Inserisci l'url">
+                        </p>
 
                         <p>
-                            <input type="submit" value="INVIA" class="bottone">
+                            <label for="data" class="lab bold">Data</label>
+                            <input type="date" name="data" id="data">
                         </p>
+
+                        <p>
+                            <br><label for="testo" class="bold">Testo</label>
+                        </p>
+
+                        <p><textarea class="testo"></textarea></p>
+
+
+                        <p><input type="submit" value="INVIA" class="bottone"></p>
 
                     </form>
                 </div>

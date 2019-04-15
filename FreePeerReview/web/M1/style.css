@@ -28,8 +28,7 @@ body {
     display: block;
 }
 
-body,html
-{
+body,html{
     height: 100%;
     margin: 0px;
 }
@@ -49,18 +48,18 @@ a{text-decoration: none;}
 header{background-color: #333;}
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
 }
 
 ul.topnav li a:hover:not(.current_page_item){
@@ -81,6 +80,7 @@ ul.topnav li a:hover:not(.current_page_item){
 }
 
 main{padding: 20px;}
+
 aside{padding: 5px;}
 
 .login{
@@ -171,11 +171,9 @@ img.azione{
 
 #sezImg{text-align: center;}
 
-#immagineArticolo{ 
-    width: 100%;
+#immagineArticolo{
     height: auto;
-    max-height: 500px;
-    max-width: 700px;
+    max-width: 80%;
 }
 
 .lab{
@@ -187,8 +185,8 @@ img.azione{
 
 .bold{font-weight: bold;}
 
-#testo,#commentiAutori,#commentiOrganizzatori{
-    min-height: 250px;
+.testo{
+    min-height: 200px;
     min-width: 100%;
     overflow-y: scroll;
     resize: none;
@@ -201,8 +199,7 @@ img.azione{
 
 .inline{display: inline-block;}
 
-.sezProfilo
-{
+.sezProfilo{
     padding: 10px;
     margin: auto;
 }
@@ -218,7 +215,7 @@ img.azione{
     font-size: 20px;
     float: right;
 }
-    
+
 footer{
     height: 50px;
     padding: 15px;
@@ -226,16 +223,14 @@ footer{
     color: white;
 }
 
-
 input[type="url"], input[type="text"], input[type="email"], input[type="password"], input[type="date"]{
     width: 100%;
     max-width: 170px;
 }
 
-
 /* For mobile phones: */
-  [class*="col-"] {
-  width: 100%;
+[class*="col-"]{
+    width: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -254,16 +249,15 @@ input[type="url"], input[type="text"], input[type="email"], input[type="password
     .col-12 {width: 100%;}
 
     h1{font-size: 24px;}
-    
+
     h2{font-size: 22px;}
-    
+
     h3{font-size: 20px;}
-    
+
     body{font-size: 16px;}
 }
 
-@media only screen and (min-width: 481px)
-{
+@media only screen and (min-width: 481px){
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -277,7 +271,7 @@ input[type="url"], input[type="text"], input[type="email"], input[type="password
     .col-s-11 {width: 91.66%;}
     .col-s-10 {width: 83.33%;}
     .col-s-12 {width: 100%;}
-    
+
     #miniMieiArticoli,#miniDaValutare,#logout{
         visibility: hidden;
         width: 0px;
@@ -307,6 +301,11 @@ input[type="url"], input[type="text"], input[type="email"], input[type="password
         padding-bottom: 10px;
     }
     
+    #miniMieiArticoli a,#miniDaValutare a{
+        color: #00aec7;
+        font-weight: bold;
+    }
+
     #saluto,#iMieiArticoli,#daValutare{
         visibility: hidden;
         width: 0px;
@@ -314,12 +313,12 @@ input[type="url"], input[type="text"], input[type="email"], input[type="password
         border: 0px;
         padding: 0;
     }
-    
+
     #logout{
         visibility: visible;
         float: right;
     }
-    
+
     #logout a{
         display: block;
         text-align: center;
