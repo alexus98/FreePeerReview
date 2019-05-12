@@ -25,7 +25,7 @@
                     <c:when test="${utente.isOrganizzatore() == false}">
                         <h1>Scrivi Articolo</h1>
                         <div id="scriviArticolo">
-                            <form action="articoli.html" method="post">
+                            <form action="scriviArticolo.html?pid=${mieiArticoli.get(i).getIdArticolo()}" method="post">
                                 <p>
                                     <label for="titolo" class="lab bold">Titolo</label>
                                     <input type="text" value="${articolo.getTitolo()}" name="titolo" id="titolo" placeholder="Titolo">
@@ -33,44 +33,47 @@
 
                                 <p>
                                     <label for="autori" class="lab bold">Autori</label>
-                                    <input type="text" value="<c:forEach begin="0" end="${articolo.getAutore().size()-1}" var="i">${articolo.getAutore().get(i).getName()}</c:forEach>" name="autori" id="autori" placeholder="Autori">
+                                    <!--<input type="text" value="<c:forEach begin="0" end="${articolo.getAutore().size()-1}" var="i">${articolo.getAutore().get(i).getName()}</c:forEach>" name="autori" id="autori" placeholder="Autori">-->
+                                    <select size="”${allUtenti.size()-1}" multiple>
+                                        <c:forEach begin="0" end="${allUtenti.size()-1}" var="i">
+                                            <option value="${allUtenti.get(i).getIdUtente()}">${allUtenti.get(i).getName()}</option>
+                                        </c:forEach>
+                                    </select>
                                 </p>
 
                                 <p class="bold">Categorie</p>
-
                                 <div>
                                     <p class="inline">
-                                        <label class="lab" for="html"><input type="checkbox" name="categoria" id="html" value="html">HTML</label>
-                                    </p>
+                                        <label class="lab" for="html"><input type="checkbox" name="html" value="1" <c:if test="${articolo.isCategoria(1)==true}">checked</c:if>>HTML</label>
+                                        </p>
+                                        <p class="inline">
+                                            <label class="lab" for="jsp"><input type="checkbox" name="jsp" value="2" <c:if test="${articolo.isCategoria(2)==true}">checked</c:if>>JSP</label>
+                                        </p>
+                                    </div>
 
-                                    <p class="inline">
-                                        <label class="lab" for="jsp"><input type="checkbox" name="categoria" id="jsp" value="jsp">JSP</label>
-                                    </p>
-                                </div>
+                                    <div>
+                                        <p class="inline">
+                                            <label class="lab" for="css"><input type="checkbox" name="css" value="3" <c:if test="${articolo.isCategoria(3)==true}">checked</c:if>>CSS</label>
+                                        </p>
 
-                                <div>
-                                    <p class="inline">
-                                        <label class="lab" for="css"><input type="checkbox" name="categoria" id="css" value="css">CSS</label>
-                                    </p>
+                                        <p class="inline">
+                                            <label class="lab" for="javascript"><input type="checkbox" name="javascript" value="4" <c:if test="${articolo.isCategoria(4)==true}">checked</c:if>>JavaScript</label>
+                                        </p>
+                                    </div>
 
-                                    <p class="inline">
-                                        <label class="lab" for="javascript"><input type="checkbox" name="categoria" id="javascript" value="javascript">JavaScript</label>
-                                    </p>
-                                </div>
+                                    <div>
+                                        <p class="inline">
+                                            <label class="lab" for="servlet"><input type="checkbox" name="servlet" value="5" <c:if test="${articolo.isCategoria(5)==true}">checked</c:if>>Servlet</label>
+                                        </p>
 
-                                <div>
-                                    <p class="inline">
-                                        <label class="lab" for="servlet"><input type="checkbox" name="categoria" id="servlet" value="servlet">Servlet</label>
-                                    </p>
+                                        <p class="inline">
+                                            <label  class="lab" for="ajax"><input type="checkbox" name="ajax" value="6" <c:if test="${articolo.isCategoria(6)==true}">checked</c:if>>AJAX</label>
+                                        </p>
+                                    </div>
 
-                                    <p class="inline">
-                                        <label  class="lab" for="ajax"><input type="checkbox" name="categoria" id="ajax" value="ajax">AJAX</label>
-                                    </p>
-                                </div>
-
-                                <p>
-                                    <label for="immagine" class="lab bold">Immagine</label>
-                                    <input type="text" name="immagine" value="${articolo.getImmagine()}" id="immagine" placeholder="Inserisci l'url">
+                                    <p>
+                                        <label for="immagine" class="lab bold">Immagine</label>
+                                        <input type="text" name="immagine" value="${articolo.getImmagine()}" id="immagine" placeholder="Inserisci l'url">
                                 </p>
 
                                 <p>
@@ -78,14 +81,10 @@
                                     <input type="date" name="data"  value="${articolo.getData()}" id="data">
                                 </p>
 
-                                <p>
-                                    <br><label for="testo" class="bold">Testo</label>
-                                </p>
+                                <p><br><label for="testo" class="bold">Testo</label></p>
+                                <p><textarea class="testo" name="testo">${articolo.getTesto()}</textarea></p>
 
-                                <p><textarea class="testo">${articolo.getTesto()}</textarea></p>
-
-
-                                <p><input type="submit" value="INVIA" class="bottone"></p>
+                                <p><input type="submit" value="SALVA" name="salva" class="bottone"></p>
 
                             </form>
                         </div>
@@ -104,3 +103,4 @@
         <jsp:include page="footer.jsp"/>
     </body>
 </html>
++

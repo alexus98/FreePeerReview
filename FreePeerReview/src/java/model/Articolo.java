@@ -101,6 +101,15 @@ public class Articolo
     public String getData() {
         return data;
     }
+    
+    public String getDataFormatoClassico()
+    {
+        String parti[] = data.split("-");
+        String giorno=parti[0];
+        String mese=parti[1];
+        String anno=parti[2];
+        return anno.concat("-").concat(mese).concat("-").concat(giorno);
+    }
 
     /**
      * @param data the data to set
@@ -137,6 +146,13 @@ public class Articolo
         this.stato = stato;
     }
     
-    
-    
+        public Boolean isCategoria(int idCategoria)
+    {
+        for(Categoria c : this.getCategoria()){
+            if(c.getIdCategoria()== idCategoria){
+                return true;
+            }
+        }
+        return false;
+    }
 }

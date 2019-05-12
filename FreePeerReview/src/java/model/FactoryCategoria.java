@@ -26,7 +26,8 @@ public class FactoryCategoria
         return singleton;
     }
 
-    public List<Categoria> getAllCategorie() {
+    public List<Categoria> getAllCategorie()
+    {
         List<Categoria> categorie = new ArrayList<>();
 
         Categoria html=new Categoria();
@@ -35,30 +36,41 @@ public class FactoryCategoria
         categorie.add(html);
                 
         Categoria jsp=new Categoria();
-        jsp.setIdCategoria(1);
+        jsp.setIdCategoria(2);
         jsp.setNomeCategoria("jsp");
         categorie.add(jsp);
         
         Categoria css=new Categoria();
-        css.setIdCategoria(1);
+        css.setIdCategoria(3);
         css.setNomeCategoria("CSS");
         categorie.add(css);
                 
         Categoria javaScript=new Categoria();
-        javaScript.setIdCategoria(1);
+        javaScript.setIdCategoria(4);
         javaScript.setNomeCategoria("JavaScript");
         categorie.add(javaScript);
         
         Categoria servlet=new Categoria();
-        servlet.setIdCategoria(1);
+        servlet.setIdCategoria(5);
         servlet.setNomeCategoria("Servlet");
         categorie.add(servlet);
         
         Categoria ajax=new Categoria();
-        ajax.setIdCategoria(1);
+        ajax.setIdCategoria(6);
         ajax.setNomeCategoria("AJAX");
         categorie.add(ajax);
         
         return categorie;
+    }
+    
+    public Categoria getCategoriaById(int id)
+    {
+        List<Categoria> categorie = this.getAllCategorie();
+        for(Categoria c : categorie){
+            if(c.getIdCategoria()== id){
+                return c;
+            }
+        }
+        return null;
     }
 }

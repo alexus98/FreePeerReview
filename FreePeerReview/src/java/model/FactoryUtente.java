@@ -32,23 +32,32 @@ public class FactoryUtente
     {
         List<Utente> utenti = new ArrayList<>();
         
-        Utente ale = new Utente();
-        ale.setIdUtente(1);
-        ale.setName("Alessandro");
-        ale.setSurname("Vacca");
-        ale.setEmail("ale@gmail.com");
-        ale.setPassword("123");
-        ale.setOrganizzatore(true);
-        utenti.add(ale);
+        Utente autore_1 = new Utente();
+        autore_1.setIdUtente(1);
+        autore_1.setName("Alessandro");
+        autore_1.setSurname("Vacca");
+        autore_1.setEmail("ale@gmail.com");
+        autore_1.setPassword("123");
+        autore_1.setOrganizzatore(true);
+        utenti.add(autore_1);
         
-        Utente roberto = new Utente();
-        roberto.setIdUtente(2);
-        roberto.setName("Roberto");
-        roberto.setSurname("Zedda");
-        roberto.setEmail("roberto@gmail.com");
-        roberto.setPassword("456");
-        roberto.setOrganizzatore(false);
-        utenti.add(roberto);
+        Utente autore_2 = new Utente();
+        autore_2.setIdUtente(2);
+        autore_2.setName("Roberto");
+        autore_2.setSurname("Zedda");
+        autore_2.setEmail("roberto@gmail.com");
+        autore_2.setPassword("456");
+        autore_2.setOrganizzatore(false);
+        utenti.add(autore_2);
+        
+        Utente nico = new Utente();
+        nico.setIdUtente(3);
+        nico.setName("Nicola");
+        nico.setSurname("Loi Zedda");
+        nico.setEmail("nicola@gmail.com");
+        nico.setPassword("789");
+        nico.setOrganizzatore(false);
+        utenti.add(nico);
         
         return utenti;
     }

@@ -29,57 +29,104 @@ public class FactoryArticolo {
     public List<Articolo> getArticoli() {
         List<Articolo> articoli = new ArrayList<>();
 
-        Articolo primo = new Articolo();
-        primo.setIdArticolo(1);
-        primo.setTitolo("Divina Commedia");
-        primo.setTesto("Nel mezzo del cammin di nostra vita...");
-        primo.setData("2019-05-06");
-        primo.setStato("RIFIUTATO");
-        List<Utente> ale = new ArrayList<>();
-        ale.add(FactoryUtente.getInstance().getUtenteById(1));
-        ale.add(FactoryUtente.getInstance().getUtenteById(2));
-        primo.setAutore(ale);
-        articoli.add(primo);
+        Articolo primoArticolo = new Articolo();
+        primoArticolo.setIdArticolo(1);
+        primoArticolo.setTitolo("Articolo di Roberto e Nicola");
+        primoArticolo.setTesto("Testo articolo di Roberto e Nicola");
+        primoArticolo.setData("2019-05-06-");
+        primoArticolo.setStato("APERTO");
+        List<Categoria> categoriePrimoArt =  new ArrayList<>();
+        categoriePrimoArt.add(FactoryCategoria.getInstance().getCategoriaById(3));
+        categoriePrimoArt.add(FactoryCategoria.getInstance().getCategoriaById(4));
+        primoArticolo.setCategoria(categoriePrimoArt);
+        List<Utente> autoriPrimoArt = new ArrayList<>();
+        autoriPrimoArt.add(FactoryUtente.getInstance().getUtenteById(2));
+        autoriPrimoArt.add(FactoryUtente.getInstance().getUtenteById(3));
+        primoArticolo.setAutore(autoriPrimoArt);
+        articoli.add(primoArticolo);
 
-        Articolo terzo = new Articolo();
-        terzo.setIdArticolo(3);
-        terzo.setTitolo("I Promessi Sposi");
-        terzo.setTesto("Quel ramo del lago di Como...");
-        terzo.setData("2019-05-04");
-        terzo.setStato("APERTO");
-        List<Utente> rob = new ArrayList<>();
-        rob.add(FactoryUtente.getInstance().getUtenteById(2));
-        terzo.setAutore(rob);
-        articoli.add(terzo);
+        Articolo secondoArticolo = new Articolo();
+        secondoArticolo.setIdArticolo(2);
+        secondoArticolo.setTitolo("Articolo di Roberto");
+        secondoArticolo.setTesto("Testo articolo di Roberto");
+        secondoArticolo.setData("2019-05-04");
+        secondoArticolo.setStato("APERTO");
+        List<Categoria> categorieSecondoArt =  new ArrayList<>();
+        categorieSecondoArt.add(FactoryCategoria.getInstance().getCategoriaById(1));
+        categorieSecondoArt.add(FactoryCategoria.getInstance().getCategoriaById(2));
+        secondoArticolo.setCategoria(categorieSecondoArt);
+        List<Utente> autoriSecondoArt = new ArrayList<>();
+        autoriSecondoArt.add(FactoryUtente.getInstance().getUtenteById(2));
+        secondoArticolo.setAutore(autoriSecondoArt);
+        articoli.add(secondoArticolo);
 
+        Articolo terzoArticolo = new Articolo();
+        terzoArticolo.setIdArticolo(3);
+        terzoArticolo.setTitolo("Articolo di Nicola");
+        terzoArticolo.setTesto("Testo articolo di Nicola");
+        terzoArticolo.setData("2019-05-10");
+        terzoArticolo.setStato("VALUTAZIONE");
+        List<Categoria> categorieTerzoArt =  new ArrayList<>();
+        categorieTerzoArt.add(FactoryCategoria.getInstance().getCategoriaById(5));
+        categorieTerzoArt.add(FactoryCategoria.getInstance().getCategoriaById(6));
+        terzoArticolo.setCategoria(categorieTerzoArt);
+        List<Utente> autoriTerzoArt = new ArrayList<>();
+        autoriTerzoArt.add(FactoryUtente.getInstance().getUtenteById(3));
+        terzoArticolo.setAutore(autoriTerzoArt);
+        articoli.add(terzoArticolo);
+        
         return articoli;
     }
     
     public List<Articolo> getArticoliOrdinati() {
         List<Articolo> articoli = new ArrayList<>();
 
-        Articolo terzo = new Articolo();
-        terzo.setIdArticolo(3);
-        terzo.setTitolo("I Promessi Sposi");
-        terzo.setTesto("Quel ramo del lago di Como...");
-        terzo.setData("2019-05-04");
-        terzo.setStato("APERTO");
-        List<Utente> rob = new ArrayList<>();
-        rob.add(FactoryUtente.getInstance().getUtenteById(2));
-        terzo.setAutore(rob);
-        articoli.add(terzo);
+        Articolo secondoArticolo = new Articolo();
+        secondoArticolo.setIdArticolo(2);
+        secondoArticolo.setTitolo("Articolo di Roberto");
+        secondoArticolo.setTesto("Testo articolo di Roberto");
+        secondoArticolo.setData("2019-05-04");
+        secondoArticolo.setStato("APERTO");
+        List<Categoria> categorieSecondoArt =  new ArrayList<>();
+        categorieSecondoArt.add(FactoryCategoria.getInstance().getCategoriaById(1));
+        categorieSecondoArt.add(FactoryCategoria.getInstance().getCategoriaById(2));
+        secondoArticolo.setCategoria(categorieSecondoArt);
+        List<Utente> autoriSecondoArt = new ArrayList<>();
+        autoriSecondoArt.add(FactoryUtente.getInstance().getUtenteById(2));
+        secondoArticolo.setAutore(autoriSecondoArt);
+        articoli.add(secondoArticolo);
+        
+        Articolo primoArticolo = new Articolo();
+        primoArticolo.setIdArticolo(1);
+        primoArticolo.setTitolo("Articolo di Roberto e Nicola");
+        primoArticolo.setTesto("Testo articolo di Roberto e Nicola");
+        primoArticolo.setData("2019-05-06");
+        primoArticolo.setStato("APERTO");
+        List<Categoria> categoriePrimoArt =  new ArrayList<>();
+        categoriePrimoArt.add(FactoryCategoria.getInstance().getCategoriaById(3));
+        categoriePrimoArt.add(FactoryCategoria.getInstance().getCategoriaById(4));
+        primoArticolo.setCategoria(categoriePrimoArt);
+        List<Utente> autoriPrimoArt = new ArrayList<>();
+        autoriPrimoArt.add(FactoryUtente.getInstance().getUtenteById(2));
+        autoriPrimoArt.add(FactoryUtente.getInstance().getUtenteById(3));
+        primoArticolo.setAutore(autoriPrimoArt);
+        articoli.add(primoArticolo);
 
-        Articolo primo = new Articolo();
-        primo.setIdArticolo(1);
-        primo.setTitolo("Divina Commedia");
-        primo.setTesto("Nel mezzo del cammin di nostra vita...");
-        primo.setData("2019-05-06");
-        primo.setStato("APERTO");
-        List<Utente> ale = new ArrayList<>();
-        ale.add(FactoryUtente.getInstance().getUtenteById(1));
-        ale.add(FactoryUtente.getInstance().getUtenteById(2));
-        primo.setAutore(ale);
-        articoli.add(primo);
+        
+        Articolo terzoArticolo = new Articolo();
+        terzoArticolo.setIdArticolo(3);
+        terzoArticolo.setTitolo("Articolo di Nicola");
+        terzoArticolo.setTesto("Testo articolo di Nicola");
+        terzoArticolo.setData("2019-05-10");
+        terzoArticolo.setStato("APERTO");
+        List<Categoria> categorieTerzoArt =  new ArrayList<>();
+        categorieTerzoArt.add(FactoryCategoria.getInstance().getCategoriaById(5));
+        categorieTerzoArt.add(FactoryCategoria.getInstance().getCategoriaById(6));
+        terzoArticolo.setCategoria(categorieTerzoArt);
+        List<Utente> autoriTerzoArt = new ArrayList<>();
+        autoriTerzoArt.add(FactoryUtente.getInstance().getUtenteById(3));
+        terzoArticolo.setAutore(autoriTerzoArt);
+        articoli.add(terzoArticolo);
 
         return articoli;
     }

@@ -7,6 +7,7 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.Articolo;
+import model.Categoria;
 import model.FactoryArticolo;
+import model.FactoryCategoria;
 import model.FactoryUtente;
 import model.Utente;
 
@@ -32,24 +35,56 @@ public class WriteArticolo extends HttpServlet {
 
         HttpSession sessione = request.getSession();
 
+        int utenteId = (int) sessione.getAttribute("utenteId");
+
         if (sessione.getAttribute("utenteId") != null) {
-            int utenteId = (int) sessione.getAttribute("utenteId");
             Utente utente = FactoryUtente.getInstance().getUtenteById(utenteId);
             request.setAttribute("utente", utente);
+            List<Articolo> mieiArticoli = FactoryArticolo.getInstance().getArticoliByAutore(utente);
+            List<Articolo> articoliDaValutare = FactoryArticolo.getInstance().getArticoliDaValutare(utente);
+            List<Utente> allUtenti = FactoryUtente.getInstance().getUtenti();
+            int pid = Integer.parseInt(request.getParameter("pid"));
 
-            if (utente.isOrganizzatore() == false) {
-                List<Articolo> mieiArticoli = FactoryArticolo.getInstance().getArticoliByAutore(utente);
-                List<Articolo> articoliDaValutare = FactoryArticolo.getInstance().getArticoliDaValutare(utente);
-                int idArticolo = Integer.parseInt(request.getParameter("pid"));
-                Articolo a = FactoryArticolo.getInstance().getArticoloById(idArticolo);
+            if (request.getParameter("salva") != null) {
+                Articolo b = FactoryArticolo.getInstance().getArticoloById(pid);
+                
+                List<Categoria> cat = new ArrayList<>();
+                if (request.getParameter("html") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("html"))));
+                }
+                if (request.getParameter("jsp") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("jsp"))));
+                }
+                if (request.getParameter("css") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("css"))));
+                }
+                if (request.getParameter("javascript") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("javascript"))));
+                }
+                if (request.getParameter("servlet") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("servlet"))));
+                }
+                if (request.getParameter("ajax") != null) {
+                    cat.add(FactoryCategoria.getInstance().getCategoriaById(Integer.parseInt(request.getParameter("ajax"))));
+                }
 
-                request.setAttribute("mieiArticoli", mieiArticoli);
-                request.setAttribute("articoliDaValutare", articoliDaValutare);
+                b.setCategoria(cat);
+                b.setTitolo(request.getParameter("titolo"));
+                String data = request.getParameter("data");
+                b.setData(request.getParameter("data"));
+                b.setImmagine(request.getParameter("immagine"));
+                b.setTesto(request.getParameter("testo"));
+
+                request.setAttribute("articolo", b);
+            } else if (utente.isOrganizzatore() == false) {
+                Articolo a = FactoryArticolo.getInstance().getArticoloById(pid);
                 request.setAttribute("articolo", a);
             }
+            request.setAttribute("allUtenti", allUtenti);
+            request.setAttribute("mieiArticoli", mieiArticoli);
+            request.setAttribute("articoliDaValutare", articoliDaValutare);
         }
         request.getRequestDispatcher("scriviArticolo.jsp").forward(request, response);
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

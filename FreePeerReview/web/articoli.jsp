@@ -43,7 +43,7 @@
                                             </c:otherwise>
                                         </c:choose>
 
-                                        <td> ${mieiArticoli.get(i).getData()}</td>
+                                        <td> ${mieiArticoli.get(i).getDataFormatoClassico()}</td>
                                         <td>${mieiArticoli.get(i).getTitolo()}</td>
                                         <c:choose>
                                             <c:when test="${mieiArticoli.get(i).getStato() == 'APERTO'}">
