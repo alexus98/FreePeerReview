@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FPW - Articoli</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alessandro Vacca">
+        <meta name="keywords" content="articoli, fpw, conferenze">
+        <meta name="description" content="Articoli FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="row">
+            <div class="col-2 col-s-2 centrato">
+                <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+
+            <div id="logout">
+                <a  href="../index.html">LOGOUT</a>
+            </div>
+
+            <div class="col-10 col-s-10">
+                <ul class="topnav">
+                    <li><a href="articoli.html" class="current_page_item">ARTICOLI</a></li>
+                    <li><a href="valutazione.html" >VALUTAZIONE</a></li>
+                    <li><a href="profilo.html">PROFILO</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="row">
+            <aside class="col-2 col-s-2">
+                <div id="saluto">
+                    <p>Ciao, <a href="profilo.html" >Davide</a></p>
+                    <a href="../index.html" class="bottone">LOGOUT</a>
+                </div>
+
+                <div id="iMieiArticoli">
+                    <h4>I miei articoli</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html">I miei articoli</a>
+                </div>
+
+                <div id="daValutare">
+                    <h4>Da Valutare</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniDaValutare">
+                    <a href="valutazione.html">Da Valutare</a>
+                </div>
+
+            </aside>
+
+            <main class="col-10 col-s-10 centrato">
+                <div>
+                    <h1>I MIEI ARTICOLI</h1>
+                    <table id="tabellaArticoli">
+                        <tr>
+                            <th>Data</th>
+                            <th>Titolo</th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+
+                        <tr class="dispari">
+                            <td>25/02/2019</td>
+                            <td>Come usare il br</td>
+                            <td id="aperto">Aperto</td>
+                            <td>
+                                <a href=""><img src="../images/cestino.png" class="azione" alt="Cancella"></a>
+                                <a href=""><img src="../images/penna.png" class="azione" alt="Modifica"></a>
+                            </td>
+                        </tr>
+
+                        <tr class="pari">
+                            <td>07/01/2019</td>
+                            <td>Box Model</td>
+                            <td id="inValutazione">Valutazione</td>
+                            <td><a href=""><img src="../images/cestino.png" class="azione" alt="Cancella"></a></td>
+                        </tr>
+
+                        <tr class="dispari">
+                            <td>11/12/2018</td>
+                            <td>Ajax per filtri</td>
+                            <td class="accettato">Accettato</td>
+                            <td></td>
+                        </tr>
+
+                        <tr class="pari">
+                            <td>05/08/2017</td>
+                            <td>...</td>
+                            <td class="rifiutato">Rifiutato</td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <p><a href="scriviArticolo.html" class="bottone">NUOVO ARTICOLO</a></p>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            FPW Designed by Alesandro Vacca
+        </footer>
+    </body>
+</html>
