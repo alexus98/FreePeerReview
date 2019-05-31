@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-apr-2019, 1.12.34
+    Author     : Alessandro
+*/
+
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: block;
+}
+
+body,html{
+    height: 100%;
+    margin: 0px;
+}
+
+h1{font-size: 20px;}
+
+h2{font-size: 18px;}
+
+h3{font-size: 16px;}
+
+body{font-size: 13px;}
+
+.centrato{text-align: center;}
+
+a{text-decoration: none;}
+
+header{background-color: #333;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+}
+
+ul.topnav li a:hover:not(.current_page_item){
+    background-color: #464646;
+    color: #00aec7;
+}
+
+.logo{
+    width: 80px;
+    height: 46px;
+    padding-left: 5px;
+}
+
+.current_page_item {
+    font-weight: bold;
+    color: white;
+    background-color:#00aec7; 
+}
+
+main{padding: 20px;}
+
+aside{padding: 5px;}
+
+.login{
+    padding: 20px;
+    border: 2px solid black;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.bottone{
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #00aec7;
+    border: 1px solid #00aec7;
+    color: white;
+    width: 100%;
+    max-width: 200px;
+}
+
+#saluto{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#iMieiArticoli,#daValutare{
+    border-top: 1px black solid;
+}
+
+#iMieiArticoli ul, #daValutare ul{
+    padding-left: 20px;
+}
+
+#iMieiArticoli ul li, #daValutare ul li{
+    padding: 2px;
+}
+
+#tabellaArticoli{
+    background-color: #333;
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.pari{
+    background-color: white;
+}
+
+.dispari{
+    background-color: #d7d6d6;
+}
+
+#articolo{
+    border-bottom: 1px black solid;
+}
+
+#tabellaArticoli td, #tabellaArticoli th{
+    padding: 5px 0px;
+}
+
+#tabellaArticoli th{
+    background-color: #333;
+    color: #00aec7;
+}
+
+img.azione{
+    width: 20px;
+    height: 20px;
+}
+
+.aperto{
+    font-weight: bold;
+    color: #0793fb
+}
+
+.inValutazione{
+    font-weight: bold;
+    color: #00abd1
+}
+
+.accettato{
+    font-weight: bold;
+    color: green;
+}
+
+.rifiutato{
+    font-weight: bold;
+    color: red;
+}
+
+#sezImg{text-align: center;}
+
+#immagineArticolo{
+    height: auto;
+    max-width: 80%;
+}
+
+.lab{
+    width: 120px;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+}
+
+.bold{font-weight: bold;}
+
+.testo{
+    min-height: 200px;
+    min-width: 100%;
+    overflow-y: scroll;
+    resize: none;
+}
+
+#scriviArticolo{
+    margin: auto;
+    padding: 20px;
+}
+
+.inline{display: inline-block;}
+
+.sezProfilo{
+    padding: 10px;
+    margin: auto;
+}
+
+#imgProf{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#cancellati{
+    float: right;
+}
+
+#cancellati a{
+    font-weight: bold;
+    background-color: #a00000;
+    color: white;
+    padding: 5px;
+}
+
+footer{
+    height: 50px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+input[type="url"], input[type="text"], input[type="email"], input[type="password"], input[type="date"]{
+    width: 100%;
+    max-width: 170px;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus, textArea:focus{
+    background-color: #effdff;
+}
+
+/* For mobile phones: */
+[class*="col-"]{
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    h1{font-size: 24px;}
+
+    h2{font-size: 22px;}
+
+    h3{font-size: 20px;}
+
+    body{font-size: 16px;}
+}
+
+@media only screen and (min-width: 481px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-12 {width: 100%;}
+
+    #miniMieiArticoli,#miniDaValutare,#logout{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.topnav li {float: none;}
+
+    h1{font-size: 16px;}
+
+    h2{font-size: 14px;}
+
+    h3{font-size: 12px;}
+
+    body{font-size: 12px;}
+
+    .lab{
+        text-align: center;
+        width: 100%;
+    }
+
+    #miniMieiArticoli,#miniDaValutare{
+        visibility: visible;
+        font-size: 20px;
+        border-bottom: black 1px solid;
+        padding-bottom: 10px;
+    }
+    
+    #miniMieiArticoli a,#miniDaValutare a{
+        color: #00aec7;
+        font-weight: bold;
+    }
+
+    #saluto,#iMieiArticoli,#daValutare{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        padding: 0;
+    }
+
+    #logout{
+        visibility: visible;
+        float: right;
+    }
+
+    #logout a{
+        display: block;
+        text-align: center;
+        padding: 7px 15px;
+        color: white;
+        background-color: #464646;
+        font-weight: bold;
+    }
+}
+

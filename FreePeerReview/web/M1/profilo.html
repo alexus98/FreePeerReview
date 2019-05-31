@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FPW - Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alessandro Vacca">
+        <meta name="keywords" content="profilo, fpw">
+        <meta name="description" content="Profilo Fpw">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="row">
+            <div class="col-2 col-s-2 centrato">
+                <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+
+            <div id="logout">
+                <a href="../index.html">LOGOUT</a>
+            </div>
+
+            <div class="col-10 col-s-10">
+                <ul class="topnav">
+                    <li><a href="articoli.html">ARTICOLI</a></li>
+                    <li><a href="valutazione.html" >VALUTAZIONE</a></li>
+                    <li><a href="profilo.html" class="current_page_item">PROFILO</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="row">
+            <aside class="col-2 col-s-2">
+                <div id="saluto">
+                    <p>Ciao, <a href="profilo.html" >Davide</a></p>
+                    <a href="../index.html" class="bottone">LOGOUT</a>
+                </div>
+
+                <div id="iMieiArticoli">
+                    <h4>I miei articoli</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html">I miei articoli</a>
+                </div>
+
+                <div id="daValutare">
+                    <h4>Da Valutare</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniDaValutare">
+                    <a href="valutazione.html">Da Valutare</a>
+                </div>
+            </aside>
+
+            <main class="col-10 col-s-10">
+                <div class="sezProfilo centrato">
+                    <h1 >PROFILO</h1>
+                    <form>
+                        <img src="../images/profilo.jpg" alt="foto profilo" id="imgProf">
+                        <p>
+                            <label for="nome" class="lab bold">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                        </p>
+
+                        <p>
+                            <label for="cognome" class="lab bold">Cognome</label>
+                            <input type="text" name="cognome" id="cognome" placeholder="Cognome">
+                        </p>
+
+                        <p>
+                            <label for="foto" class="lab bold">Foto</label>
+                            <input type="url" name="foto" id="foto" placeholder="Inserisci l'url">
+                        </p>
+
+                        <p>
+                            <label for="email" class="lab bold">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </p>
+
+                        <p>
+                            <label for="password" class="lab bold">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </p>
+
+                        <p>
+                            <label for="ente" class="lab bold">Ente</label>
+                            <input type="text" name="ente" id="ente" placeholder="Ente">
+                        </p>
+
+                        <p>
+                            <input type="submit" value="SALVA" class="bottone">
+                        </p>
+                    </form>
+
+                    <p  id="cancellati"><a href=""> CANCELLATI</a></p>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            FPW Designed by Alesandro Vacca
+        </footer>
+    </body>
+</html>

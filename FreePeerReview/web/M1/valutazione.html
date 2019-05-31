@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FPW - Valutazioni</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alessandro Vacca">
+        <meta name="keywords" content="valutazione, fpw, conferenze">
+        <meta name="description" content="Valutazione FPW">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header class="row">
+            <div class="col-2 col-s-2 centrato">
+                <a href="../index.html"><img class="logo" title="Logo" src="../images/logo.png " alt="logo FPW"></a>
+            </div>
+
+            <div id="logout">
+                <a  href="../index.html">LOGOUT</a>
+            </div>
+
+            <div class="col-10 col-s-10">
+                <ul class="topnav">
+                    <li><a href="articoli.html">ARTICOLI</a></li>
+                    <li><a href="valutazione.html" class="current_page_item">VALUTAZIONE</a></li>
+                    <li><a href="profilo.html">PROFILO</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="row">
+            <aside class="col-2 col-s-2">
+                <div id="saluto">
+                    <p>Ciao, <a href="profilo.html" >Davide</a></p>
+                    <a href="../index.html" class="bottone">LOGOUT</a>
+                </div>
+
+                <div id="iMieiArticoli">
+                    <h4>I miei articoli</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniMieiArticoli">
+                    <a href="articoli.html">I miei articoli</a>
+                </div>
+
+                <div id="daValutare">
+                    <h4>Da Valutare</h4>
+                    <ul>
+                        <li><a href="">Articolo1</a></li>
+                        <li><a href="">Articolo2</a></li>
+                        <li><a href="">Articolo3</a></li>
+                    </ul>
+                </div>
+
+                <div id="miniDaValutare">
+                    <a href="valutazione.html">Da Valutare</a>
+                </div>
+            </aside>
+
+            <main class="col-10 col-s-10">
+                <div id="articolo">
+                    <h1>La SQL Injection</h1>
+                    <h3>Autori anonimi</h3>
+                    <p id="sezImg"><img src="../images/imgArticolo.jpg" id="immagineArticolo" alt="img prova"></p>
+                    <h3>Categorie: Servlet, JSP</h3>
+                    <h3>Data: 5 Marzo 2019</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur. Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div id="valutazione">
+                    <h1>Valutazione</h1>
+                    <form action="" method="post">
+                        <p class="bold">Voto</p>
+                        <label for="1">1</label>
+                        <input type="radio" name="voto" id="1" value="1">
+
+                        <label for="2">2</label>
+                        <input type="radio" name="voto" id="2" value="2">
+
+                        <label for="3">3</label>
+                        <input type="radio" name="voto" id="3" value="3">
+
+                        <label for="4">4</label>
+                        <input type="radio" name="voto" id="4" value="4">
+
+                        <label for="5">5</label>
+                        <input type="radio" name="voto" id="5" value="5">
+
+
+
+                        <p><label for="commentiOrganizzatori" class="bold">Commenti per gli organizzatori</label></p>
+                        <p><textarea class="testo" id="commentiOrganizzatori"></textarea></p>
+
+                        <p><label for="commentiAutori" class="bold">Commenti per gli autori</label></p>
+                        <p><textarea class="testo" id="commentiAutori"></textarea></p>
+
+                        <p class="centrato"><input type="submit" value="INVIA" class="bottone"></p>
+
+                    </form>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            FPW Designed by Alesandro Vacca
+        </footer>
+    </body>
+</html>
